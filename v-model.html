@@ -1,0 +1,15 @@
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.14/vue.min.js'></script><!-- https://cdnjs.com/libraries/vue -->
+
+<div id="vue_reverse_example">
+  <p>{{ message }}</p>
+  <input v-model="message" />
+  <button v-on:click="message = message.split('').reverse().join('')">Reverse</button>
+</div>
+<script>
+const vue_reverse_example = new Vue({
+  el: 'div#vue_reverse_example',
+  data: {
+    message: 'Ibaraki.js!',
+  }
+})
+</script>
